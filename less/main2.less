@@ -4,8 +4,33 @@
 * {
     background-color: white;
 }
-
 header {
+    nav {
+      padding        : 5px 20px;
+      margin         : 0px auto;
+      .end();
+  
+      .line {
+        border-right: 1px solid black;
+        border-left : 1px solid black;
+      }
+  
+      .navele {
+        color          : grey;
+        text-decoration: none;
+        padding        : 5px 10px;
+        color          : #000;
+        font-size      : 1.2rem;
+  
+        .navele home {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  
+
+div {
     padding: 10px 20px;
     
     h1 {
@@ -13,7 +38,9 @@ header {
         font-weight: bold;
     }
 
-    p {}
+    p {
+        
+    }
 }
 
 h2 {
@@ -103,11 +130,6 @@ h2 {
           color           : black; //@bg-color;
         }    
     }
-}
-
-@media @tablet {
-
-    
 }
 
 @media @phone {
