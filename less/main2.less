@@ -1,11 +1,13 @@
+@import "variables";
+@import "mixins";
+
 * {
     background-color: white;
 }
 
 header {
     padding: 10px 20px;
-    //background-color: rgb(240, 255, 205);
-
+    
     h1 {
         font-size  : 3rem;
         font-weight: bold;
@@ -102,6 +104,22 @@ h2 {
         }    
     }
 }
+
+@media @tablet {
+
+    
+}
+
+@media @phone {
+  .column();
+  .content();
+
+  .pros-cons {
+    width : 80%;
+    margin: 8% auto;
+  }
+}
+
 footer {
     div {
         margin-top: 60px;

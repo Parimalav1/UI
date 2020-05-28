@@ -5,8 +5,9 @@ header {
   nav {
     padding        : 5px 20px;
     margin         : 0px auto;
-    display        : flex;
-    justify-content: flex-end;
+    .end();
+    // display        : flex;
+    // justify-content: flex-end;
 
 
     .line {
@@ -30,8 +31,8 @@ header {
 
 h1 {
   width: 100%;
-  ;
-  text-align: center;
+  .texta();
+  // text-align: center;
   font-size : 4rem;
 }
 
@@ -43,8 +44,9 @@ h1 {
   width            : 100%;
   height           : 70vh;
   padding          : 10px 0 20px;
-  display          : flex;
-  justify-content  : flex-end;
+  .end();
+  // display          : flex;
+  // justify-content  : flex-end;
 
 
   div {
@@ -53,7 +55,6 @@ h1 {
 
     p {
       padding: 10px 10px;
-      ;
       color           : black;
       background-color: white;
       font-size       : 1.2rem;
@@ -63,9 +64,6 @@ h1 {
 }
 
 #container {
-  // .center();
-  // align-items: center;
-  // .column();
   padding: 0 20px;
 
   h2 {
@@ -112,12 +110,14 @@ hr {
     .uses {
       h3 {
         font-size : 1.4rem;
+        padding: 20px;
         width     : 100%;
         text-align: center;
       }
 
       h4 {
         font-size : 1.2rem;
+        padding: 20px;
         width     : 100%;
         text-align: center;
       }
@@ -151,14 +151,17 @@ hr {
       color     : @font-color;
     }
   }
+  @media @tablet {
 
+  }
   @media @phone {
     .column();
     .content();
-
-    .artist {
+    
+    .pros-cons {
       width : 80%;
       margin: 8% auto;
+      .texta();
     }
   }
 }
@@ -166,7 +169,8 @@ hr {
 footer {
   background-color: white;
   padding         : 5% 40%;
-  text-align      : center;
+  .texta();
+  // text-align      : center;
 
   nav {
     display        : flex;
