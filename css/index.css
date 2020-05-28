@@ -280,6 +280,67 @@ hr {
     text-align: center;
   }
 }
+.aboutcontainer {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.aboutcontainer .pros-cons {
+  width: 33%;
+  flex-direction: column;
+  display: flex;
+  align-content: center;
+  margin: 20px 0;
+}
+.aboutcontainer .pros-cons .uses h3 {
+  font-size: 1.4rem;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.aboutcontainer .pros-cons .uses h4 {
+  font-size: 1.2rem;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.aboutcontainer .pros-cons .uses p {
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  padding: 20px;
+}
+.aboutcontainer .pros-cons img {
+  width: 70%;
+  margin: 0 auto;
+}
+.aboutcontainer .pros-cons a {
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 30px 0;
+  color: #000;
+}
+.aboutcontainer .pros-cons .pros-cons {
+  justify-content: center;
+  display: flex;
+  align-content: center;
+  text-align: justify;
+  padding: 10px 5%;
+  color: #663399;
+}
+@media ( max-width: 500px ) {
+  .aboutcontainer {
+    flex-direction: column;
+    display: flex;
+    align-content: center;
+  }
+  .aboutcontainer .pros-cons {
+    width: 80%;
+    margin: 8% auto;
+    text-align: center;
+  }
+}
 footer {
   background-color: white;
   padding: 5% 40%;

@@ -3,8 +3,8 @@
 
 header {
   nav {
-    padding        : 5px 20px;
-    margin         : 0px auto;
+    padding: 5px 20px;
+    margin : 0px auto;
     .end();
 
     .line {
@@ -29,7 +29,7 @@ header {
 h1 {
   width: 100%;
   .texta();
-  font-size : 4rem;
+  font-size: 4rem;
 }
 
 .title-container {
@@ -41,13 +41,13 @@ h1 {
   height           : 70vh;
   padding          : 10px 0 20px;
   .end();
-  
+
   div {
     // background: transparent;
     height: 10vh;
 
     p {
-      padding: 10px 10px;
+      padding         : 10px 10px;
       color           : black;
       background-color: white;
       font-size       : 1.2rem;
@@ -103,14 +103,14 @@ hr {
     .uses {
       h3 {
         font-size : 1.4rem;
-        padding: 20px;
+        padding   : 20px;
         width     : 100%;
         text-align: center;
       }
 
       h4 {
         font-size : 1.2rem;
-        padding: 20px;
+        padding   : 20px;
         width     : 100%;
         text-align: center;
       }
@@ -144,11 +144,80 @@ hr {
       color     : @font-color;
     }
   }
-  
+
   @media @phone {
     .column();
     .content();
-    
+
+    .pros-cons {
+      width : 80%;
+      margin: 8% auto;
+      .texta();
+    }
+  }
+}
+
+
+.aboutcontainer {
+  margin         : 0 20px;
+  display        : flex;
+  justify-content: space-around;
+
+  .pros-cons {
+    width: 33%;
+    .column();
+    .content();
+    margin: 20px 0;
+
+    .uses {
+      h3 {
+        font-size : 1.4rem;
+        padding   : 20px;
+        width     : 100%;
+        text-align: center;
+      }
+
+      h4 {
+        font-size : 1.2rem;
+        padding   : 20px;
+        width     : 100%;
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+        width     : 100%;
+        font-size : 1rem;
+        padding   : 20px;
+      }
+    }
+
+    img {
+      width : 70%;
+      margin: 0 auto;
+    }
+
+    a {
+      .texta();
+      text-decoration: none;
+      font-size      : 1.6rem;
+      padding        : 30px 0;
+      color          : @bio-color;
+    }
+
+    .pros-cons {
+      .center();
+      .content();
+      text-align: justify;
+      padding   : 10px 5%;
+      color     : @font-color;
+    }
+  }
+
+  @media @phone {
+    .column();
+    .content();
+
     .pros-cons {
       width : 80%;
       margin: 8% auto;
@@ -161,7 +230,7 @@ footer {
   background-color: white;
   padding         : 5% 40%;
   .texta();
- 
+
   nav {
     display        : flex;
     justify-content: space-evenly;
