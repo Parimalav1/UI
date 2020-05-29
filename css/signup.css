@@ -170,6 +170,9 @@ header nav .navele {
 header nav .navele .navele home {
   font-weight: bold;
 }
+.topcontent {
+  border: 10px solid #F5F5F5;
+}
 div {
   padding: 10px 20px;
 }
@@ -292,6 +295,7 @@ h2 {
   }
 }
 footer div {
+  border: 10px solid #F5F5F5;
   margin-top: 60px;
   width: 100%;
 }

@@ -194,7 +194,7 @@ h1 {
   margin-right: 20px;
 }
 #container {
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 #container h2 {
   font-size: 3rem;
@@ -225,11 +225,12 @@ hr {
   justify-content: space-around;
 }
 .container1 .pros-cons {
+  background-color: #F5F5F5;
   width: 50%;
   flex-direction: column;
   display: flex;
   align-content: center;
-  margin: 20px 0;
+  margin: 20px 1px;
 }
 .container1 .pros-cons .uses h3 {
   font-size: 1.4rem;
