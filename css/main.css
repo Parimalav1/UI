@@ -39,13 +39,13 @@ h1 {
 }
 .title-container div p {
   padding: 10px 10px;
-  color: black;
-  background-color: white;
+  color: #000;
+  background-color: #FFFFFF;
   font-size: 1.2rem;
   margin-right: 20px;
 }
 #container {
-  padding: 0 20px;
+  padding: 30px 20px;
 }
 #container h2 {
   font-size: 3rem;
@@ -76,11 +76,12 @@ hr {
   justify-content: space-around;
 }
 .container1 .pros-cons {
+  background-color: #F5F5F5;
   width: 50%;
   flex-direction: column;
   display: flex;
   align-content: center;
-  margin: 20px 0;
+  margin: 20px 1px;
 }
 .container1 .pros-cons .uses h3 {
   font-size: 1.4rem;
@@ -104,20 +105,13 @@ hr {
   width: 70%;
   margin: 0 auto;
 }
-.container1 .pros-cons a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 30px 0;
-  color: #000;
-}
 .container1 .pros-cons .pros-cons {
   justify-content: center;
   display: flex;
   align-content: center;
   text-align: justify;
   padding: 10px 5%;
-  color: #663399;
+  color: #000;
 }
 @media ( max-width: 500px ) {
   .container1 {
@@ -165,20 +159,13 @@ hr {
   width: 70%;
   margin: 0 auto;
 }
-.aboutcontainer .pros-cons a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.6rem;
-  padding: 30px 0;
-  color: #000;
-}
 .aboutcontainer .pros-cons .pros-cons {
   justify-content: center;
   display: flex;
   align-content: center;
   text-align: justify;
   padding: 10px 5%;
-  color: #663399;
+  color: #000;
 }
 @media ( max-width: 500px ) {
   .aboutcontainer {
@@ -193,7 +180,7 @@ hr {
   }
 }
 footer {
-  background-color: white;
+  background-color: #FFFFFF;
   padding: 5% 40%;
   text-align: center;
 }
@@ -202,6 +189,6 @@ footer nav {
   justify-content: space-evenly;
 }
 footer:hover {
-  background-color: black;
+  background-color: #000;
   color: red;
 }

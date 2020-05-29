@@ -16,8 +16,8 @@ header {
       color          : grey;
       text-decoration: none;
       padding        : 5px 10px;
-      color          : #000;
-      font-size      : 1.2rem;
+      color          : @font-color;
+      font-size      : @size;
 
       .navele home {
         font-weight: bold;
@@ -43,21 +43,20 @@ h1 {
   .end();
 
   div {
-    // background: transparent;
     height: 10vh;
 
     p {
       padding         : 10px 10px;
-      color           : black;
-      background-color: white;
-      font-size       : 1.2rem;
+      color           : @font-color;
+      background-color: @main-bg;
+      font-size       : @size;
       margin-right    : 20px;
     }
   }
 }
 
 #container {
-  padding: 0 20px;
+  padding: 30px 20px;
 
   h2 {
     font-size: 3rem;
@@ -65,19 +64,19 @@ h1 {
 
   #custom-btn {
     display         : block;
-    background-color: black; //@bg-color;
+    background-color: black;
     margin          : 40px 10px;
     cursor          : pointer;
     //width: 200px; //@width;
     //height: 45px;
     font-size       : 2rem;
     border-radius   : 10px;
-    color           : white; //@font-color;
+    color           : white;
     padding         : 10px 20px;
 
     &:hover {
-      background-color: white; //@font-color;
-      color           : black; //@bg-color;
+      background-color: white;
+      color           : black;
     }
   }
 }
@@ -95,10 +94,12 @@ hr {
   justify-content: space-around;
 
   .pros-cons {
+    background-color: @whitesmoke;
+
     width: 50%;
     .column();
     .content();
-    margin: 20px 0;
+    margin: 20px 1px;
 
     .uses {
       h3 {
@@ -109,7 +110,7 @@ hr {
       }
 
       h4 {
-        font-size : 1.2rem;
+        font-size : @size;
         padding   : 20px;
         width     : 100%;
         text-align: center;
@@ -126,14 +127,6 @@ hr {
     img {
       width : 70%;
       margin: 0 auto;
-    }
-
-    a {
-      .texta();
-      text-decoration: none;
-      font-size      : 1.6rem;
-      padding        : 30px 0;
-      color          : @bio-color;
     }
 
     .pros-cons {
@@ -178,7 +171,7 @@ hr {
       }
 
       h4 {
-        font-size : 1.2rem;
+        font-size : @size;
         padding   : 20px;
         width     : 100%;
         text-align: center;
@@ -197,13 +190,6 @@ hr {
       margin: 0 auto;
     }
 
-    a {
-      .texta();
-      text-decoration: none;
-      font-size      : 1.6rem;
-      padding        : 30px 0;
-      color          : @bio-color;
-    }
 
     .pros-cons {
       .center();
@@ -227,7 +213,7 @@ hr {
 }
 
 footer {
-  background-color: white;
+  background-color: @main-bg;
   padding         : 5% 40%;
   .texta();
 
@@ -237,7 +223,7 @@ footer {
   }
 
   &:hover {
-    background-color: black;
+    background-color: @font-color;
     color           : red;
   }
 }

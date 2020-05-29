@@ -2,44 +2,44 @@
 @import "mixins";
 
 * {
-    background-color: white;
+    background-color: @main-bg;
 }
+
 header {
     nav {
-      padding        : 5px 20px;
-      margin         : 0px auto;
-      .end();
-  
-      .line {
-        border-right: 1px solid black;
-        border-left : 1px solid black;
-      }
-  
-      .navele {
-        color          : grey;
-        text-decoration: none;
-        padding        : 5px 10px;
-        color          : #000;
-        font-size      : 1.2rem;
-  
-        .navele home {
-          font-weight: bold;
+        padding: 5px 20px;
+        margin : 0px auto;
+        .end();
+
+        .line {
+            border-right: 1px solid black;
+            border-left : 1px solid black;
         }
-      }
+
+        .navele {
+            color          : grey;
+            text-decoration: none;
+            padding        : 5px 10px;
+            color          : @font-color;
+            font-size      : @size;
+
+            .navele home {
+                font-weight: bold;
+            }
+        }
     }
-  }
-  
+}
+
+.topcontent {
+    border: 10px solid @whitesmoke;
+}
 
 div {
     padding: 10px 20px;
-    
+
     h1 {
         font-size  : 3rem;
         font-weight: bold;
-    }
-
-    p {
-        
     }
 }
 
@@ -70,22 +70,23 @@ h2 {
     .image img {
         border-radius: 10px;
     }
+
     button {
         display         : block;
-        background-color: black; //@bg-color;
+        background-color: black;
         margin          : 40px 10px;
         cursor          : pointer;
         //width: 200px; //@width;
         //height: 45px;
         font-size       : 2rem;
         border-radius   : 10px;
-        color           : white; //@font-color;
+        color           : white;
         padding         : 10px 20px;
-    
+
         &:hover {
-          background-color: white; //@font-color;
-          color           : black; //@bg-color;
-        }    
+            background-color: white;
+            color           : black;
+        }
     }
 }
 
@@ -113,42 +114,45 @@ h2 {
     .image img {
         border-radius: 10px;
     }
+
     button {
         display         : block;
-        background-color: black; //@bg-color;
+        background-color: black;
         margin          : 40px 10px;
         cursor          : pointer;
         //width: 200px; //@width;
         //height: 45px;
         font-size       : 2rem;
         border-radius   : 10px;
-        color           : white; //@font-color;
+        color           : white;
         padding         : 10px 20px;
-    
+
         &:hover {
-          background-color: white; //@font-color;
-          color           : black; //@bg-color;
-        }    
+            background-color: white;
+            color           : black;
+        }
     }
 }
 
 @media @phone {
-  .column();
-  .content();
+    .column();
+    .content();
 
-  .pros-cons {
-    width : 80%;
-    margin: 8% auto;
-  }
+    .pros-cons {
+        width : 80%;
+        margin: 8% auto;
+    }
 }
 
 footer {
     div {
+        border    : 10px solid @whitesmoke;
         margin-top: 60px;
-        width: 100%;
+        width     : 100%;
+
         p {
-            width: 100%;
+            width     : 100%;
             text-align: center;
-        }    
+        }
     }
 }
